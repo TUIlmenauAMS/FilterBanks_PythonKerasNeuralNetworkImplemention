@@ -1,10 +1,10 @@
 # Low Delay Filter Bank Implementation using Python Keras 
 
 Simple programs to use a keras convolutional neural network as implementation of a Low Delay filter bank. For literature about it, see:
-https://www.idmt.fraunhofer.de/content/dam/idmt/documents/IL/Personal%20Websites/Schuller/publications/tsp8-96.pdf
+* https://www.idmt.fraunhofer.de/content/dam/idmt/documents/IL/Personal%20Websites/Schuller/publications/tsp8-96.pdf
 and
-https://www.idmt.fraunhofer.de/content/dam/idmt/documents/IL/Personal%20Websites/Schuller/publications/tsp3-00.pdf
-and our lecture Multirate Signal Processing, 
+* https://www.idmt.fraunhofer.de/content/dam/idmt/documents/IL/Personal%20Websites/Schuller/publications/tsp3-00.pdf
+* and our lecture Multirate Signal Processing, 
 https://www.tu-ilmenau.de/mt/lehrveranstaltungen/lehre-fuer-master-mt/multirate-signal-processing/
 slides lecture 15.
 
