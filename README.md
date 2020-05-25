@@ -15,4 +15,9 @@ in Python3:
 sudo pip3 install keras
 sudo pip3 install Theano
 
-Gerald Schuller, February 2018.
+For details and examples of filter bank design, look at:
+https://github.com/TUIlmenauAMS/Jupyter_notebooks_AMS/tree/master/Audio_Coding/Lec7_PQMF
+and:
+https://www.tu-ilmenau.de/mt/lehrveranstaltungen/lehre-fuer-master-mt/audio-coding/
+
+Gerald Schuller, May 2020.
