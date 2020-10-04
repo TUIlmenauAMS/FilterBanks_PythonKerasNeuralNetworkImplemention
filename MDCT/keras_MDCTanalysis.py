@@ -104,7 +104,7 @@ if __name__ == '__main__':
     plt.xlabel('Block Number')
     plt.ylabel('Subband Index')
     plt.show()
-    subfile=open("mdct_subbands.pickle", 'wb')
     #dump the right dimensions for the subbands, last dimension: subband index:
-    pickle.dump(Y ,subfile)
+    with open("mdct_subbands.pickle", 'wb') as subfile:
+       pickle.dump(Y ,subfile)
 
