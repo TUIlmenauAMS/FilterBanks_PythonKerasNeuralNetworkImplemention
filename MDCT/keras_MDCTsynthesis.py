@@ -23,7 +23,6 @@ import scipy.io.wavfile as wav
 #import theano.tensor as tht
 #from keras_correlation_loss import corr_loss
 #import keras.backend
-#from sound import sound
 import os
 import sys
 
@@ -95,11 +94,12 @@ def keras_MDCT_syn(subbands,model):
     return xrek
 
 if __name__ == '__main__':
+    from sound import sound
     N=1024 #Number of filters, stride
     filtlen=2048 #Length of filter impulse response
     model = generate_model_syn(N,filtlen) 
-    subfile=open("mdct_subbands.pickle", 'rb')
-    subbands=pickle.load(subfile)
+    with open("mdct_subbands.pickle", 'rb') as subfile:
+       subbands=pickle.load(subfile)
     xrek= keras_MDCT_syn(subbands,model)
     os.system('espeak -ven -s 120 '+'"The output of the synthesis MDCT"')
     sound(2**15*xrek,16000)
