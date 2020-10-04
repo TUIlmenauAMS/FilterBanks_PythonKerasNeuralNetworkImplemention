@@ -22,7 +22,7 @@ import scipy.io.wavfile as wav
 #import theano.tensor as tht
 #from keras_correlation_loss import corr_loss
 import keras.backend
-from sound import sound
+#from sound import sound
 import os
 import sys
 
@@ -99,7 +99,10 @@ if __name__ == '__main__':
     X=X*1.0/2**15
     #Make the dimensionality suitable for Keras:
     Y=keras_MDCT_ana(X,model) 
-    plt.imshow(Y.T)
+    plt.imshow(Y.T, aspect='auto')
+    plt.title('The MDCT Filter Bank Spectrogram')
+    plt.xlabel('Block Number')
+    plt.ylabel('Subband Index')
     plt.show()
     subfile=open("mdct_subbands.pickle", 'wb')
     #dump the right dimensions for the subbands, last dimension: subband index:
