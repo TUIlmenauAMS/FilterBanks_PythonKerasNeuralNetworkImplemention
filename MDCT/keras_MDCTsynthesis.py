@@ -23,7 +23,7 @@ import scipy.io.wavfile as wav
 #import theano.tensor as tht
 #from keras_correlation_loss import corr_loss
 #import keras.backend
-from sound import sound
+#from sound import sound
 import os
 import sys
 
