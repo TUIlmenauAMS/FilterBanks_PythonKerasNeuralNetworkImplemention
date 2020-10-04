@@ -110,7 +110,7 @@ if __name__ == '__main__':
     Y=keras_PQMF_ana(X,model) 
     plt.imshow(Y.T)
     plt.show()
-    subfile=open("pqmf_subbands.pickle", 'wb')
     #dump the right dimensions for the subbands, last dimension: subband index:
-    pickle.dump(Y ,subfile)
+    with open("pqmf_subbands.pickle", 'wb') as subfile:
+       pickle.dump(Y ,subfile)
 
