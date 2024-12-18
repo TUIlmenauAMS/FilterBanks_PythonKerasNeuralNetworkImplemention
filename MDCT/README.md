@@ -12,7 +12,7 @@ The advantages of the neural network implementation are:
 Gerald Schuller, November 2017
 
 ## Getting Started
-The keras_*.py scripts contain the keras implementations whereas the pt_*.py scripts contain the PyTorch implementations
+The keras_\*.py scripts contain the keras implementations whereas the pt_\*.py scripts contain the PyTorch implementations
 
 In the "main" section of the MDCT programs, the variable N=1024 is the number of subbands of the MDCT. It can be set to any even number.
 It produces a "sine window" of length 2N.
